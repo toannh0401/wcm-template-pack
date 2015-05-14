@@ -406,7 +406,7 @@
                 </preference>
                 <preference>
                   <name>formViewTemplatePath</name>
-                  <value>/exo:ecm/views/templates/content-list-viewer/list/DynamicoOneColumn.gtmpl</value>
+                  <value>/exo:ecm/views/templates/content-list-viewer/list/DynamicoHomeNews.gtmpl</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
@@ -552,7 +552,7 @@
                 </preference>
                 <preference>
                   <name>formViewTemplatePath</name>
-                  <value>/exo:ecm/views/templates/content-list-viewer/list/DynamicoOneColumn.gtmpl</value>
+                  <value>/exo:ecm/views/templates/content-list-viewer/list/DynamicoHomeArticles.gtmpl</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
@@ -849,7 +849,7 @@
                 </preference>
                 <preference>
                   <name>formViewTemplatePath</name>
-                  <value>/exo:ecm/views/templates/content-list-viewer/list/DynamicoOneColumn.gtmpl</value>
+                  <value>/exo:ecm/views/templates/content-list-viewer/list/DynamicoAboutTestimonials.gtmpl</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
@@ -994,7 +994,7 @@
                 </preference>
                 <preference>
                   <name>formViewTemplatePath</name>
-                  <value>/exo:ecm/views/templates/content-list-viewer/list/DynamicoOneColumn.gtmpl</value>
+                  <value>/exo:ecm/views/templates/content-list-viewer/list/DynamicoAboutOurTeamWork.gtmpl</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
@@ -1074,7 +1074,7 @@
             </preference>
             <preference>
               <name>formViewTemplatePath</name>
-              <value>/exo:ecm/views/templates/content-list-viewer/list/DynamicoOneColumn.gtmpl</value>
+              <value>/exo:ecm/views/templates/content-list-viewer/list/DynamicoServices.gtmpl</value>
               <read-only>false</read-only>
             </preference>
             <preference>
@@ -1149,7 +1149,7 @@
                </preference>
                <preference>
                  <name>formViewTemplatePath</name>
-                 <value>/exo:ecm/views/templates/content-list-viewer/list/DynamicoOneColumn.gtmpl</value>
+                 <value>/exo:ecm/views/templates/content-list-viewer/list/DynamicoBlogBlog.gtmpl</value>
                  <read-only>false</read-only>
                </preference>
                <preference>
@@ -1222,7 +1222,7 @@
                 </preference>
                 <preference>
                   <name>formViewTemplatePath</name>
-                  <value>/exo:ecm/views/templates/content-list-viewer/list/DynamicoOneColumn.gtmpl</value>
+                  <value>/exo:ecm/views/templates/content-list-viewer/navigation/DynamicoBlogCategories.gtmpl</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
@@ -1293,7 +1293,7 @@
                 </preference>
                 <preference>
                   <name>formViewTemplatePath</name>
-                  <value>/exo:ecm/views/templates/content-list-viewer/list/DynamicoOneColumn.gtmpl</value>
+                  <value>/exo:ecm/views/templates/content-list-viewer/list/DynamicoBlogCategories.gtmpl</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>

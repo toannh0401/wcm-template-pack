@@ -44,44 +44,105 @@
           <value>war:/conf/content/artifacts/application-templates/content-list-viewer</value>
         </value-param>
         <object-param>
-          <name>Dynamico Two columns CLV template</name>
-          <description>Dynamico Two columns CLV template</description>
+          <name>Dynamico Home News</name>
+          <description>Dynamico Home News</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>Dynamico Two Columns</string>
-                        </field>
-                        <field name="templateName">
-              <string>DynamicoTwoColumns.gtmpl</string>
+               <string>Dynamico Home News</string>
             </field>
-            <field name="category">
-              <string>list</string>
-            </field>
-          </object>
-        </object-param>
-        <object-param>
-          <name>Dynamico One column CLV template</name>
-          <description>Dynamico One column CLV template</description>
-          <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
-             <field name="title">
-               <string>Dynamico One Column</string>
-                        </field>
-             <field name="templateName">
-              <string>DynamicoOneColumn.gtmpl</string>
-            </field>
-            <field name="category">
-              <string>list</string>
-            </field>
-          </object>
-        </object-param>
-        <object-param>
-          <name>Dynamico Category List</name>
-          <description>Dynamico Category List</description>
-          <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
-             <field name="title">
-               <string>Dynamico Category List</string>
-                        </field>
             <field name="templateName">
-              <string>DynamicoCategoryList.gtmpl</string>
+              <string>DynamicoHomeNews.gtmpl</string>
+            </field>
+            <field name="category">
+              <string>list</string>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>Dynamico Home Articles</name>
+          <description>Dynamico Home Articles</description>
+          <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
+            <field name="title">
+               <string>Dynamico Home Articles</string>
+            </field>
+            <field name="templateName">
+              <string>DynamicoHomeArticles.gtmpl</string>
+            </field>
+            <field name="category">
+              <string>list</string>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>Dynamico About Testimonials</name>
+          <description>Dynamico About Testimonials</description>
+          <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
+            <field name="title">
+               <string>Dynamico About Testimonials</string>
+            </field>
+            <field name="templateName">
+              <string>DynamicoAboutTestimonials.gtmpl</string>
+            </field>
+            <field name="category">
+              <string>list</string>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>Dynamico About Our TeamWork</name>
+          <description>Dynamico About Our TeamWork</description>
+          <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
+            <field name="title">
+               <string>Dynamico About Our Team Work</string>
+            </field>
+            <field name="templateName">
+              <string>DynamicoAboutOurTeamWork.gtmpl</string>
+            </field>
+            <field name="category">
+              <string>list</string>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>Dynamico Services</name>
+          <description>Dynamico Services</description>
+          <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
+            <field name="title">
+               <string>Dynamico Services</string>
+            </field>
+            <field name="templateName">
+              <string>DynamicoServices.gtmpl</string>
+            </field>
+            <field name="category">
+              <string>list</string>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>Dynamico Blog Blog</name>
+          <description>Dynamico Blog Blog</description>
+          <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
+            <field name="title">
+               <string>Dynamico Blog Blog</string>
+            </field>
+            <field name="templateName">
+              <string>DynamicoBlogBlog.gtmpl</string>
+            </field>
+            <field name="category">
+              <string>list</string>
+            </field>
+          </object>
+        </object-param>
+        
+        <object-param>
+          <name>Dynamico Blog Archives</name>
+          <description>Dynamico Blog Archives</description>
+          <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
+            <field name="title">
+              <string>Dynamico Blog Archives</string>
+            </field>
+            <field name="templateName">
+              <string>DynamicoBlogArchives.gtmpl</string>
             </field>
             <field name="category">
               <string>navigation</string>
@@ -89,20 +150,21 @@
           </object>
         </object-param>
         <object-param>
-          <name>Dynamico Documents template</name>
-          <description>Dynamico Documents template</description>
+          <name>Dynamico Blog Categories</name>
+          <description>Dynamico Blog Categories</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>Dynamico Documents</string>
-                        </field>
+              <string>Dynamico Blog Categories</string>
+            </field>
             <field name="templateName">
-              <string>DynamicoDocuments.gtmpl</string>
+              <string>DynamicoBlogCategories.gtmpl</string>
             </field>
             <field name="category">
-              <string>list</string>
+              <string>navigation</string>
             </field>
           </object>
         </object-param>
+        
         <object-param>
           <name>default.paginator</name>
           <description>Dynamico Default paginator groovy template</description>
