@@ -1187,6 +1187,11 @@
                  <value>false</value>
                  <read-only>false</read-only>
                </preference>
+              <preference>
+                <name>contextualFolder</name>
+                <value>contextualEnable</value>
+                <read-only>false</read-only>
+              </preference>      
              </preferences>
            </portlet>
            <title>Testimonials</title>
@@ -1207,7 +1212,7 @@
               <preferences>
                 <preference>
                   <name>folderPath</name>
-                  <value>repository:collaboration:/sites/@owner@/web contents/site artifacts/blogCategories</value>
+                  <value>repository:collaboration:/sites/@owner@/categories/@owner@</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
@@ -1227,9 +1232,14 @@
                 </preference>
                 <preference>
                   <name>basePath</name>
-                  <value>detail</value>
+                  <value>blog</value>
                   <read-only>false</read-only>
                 </preference>
+	              <preference>
+	                <name>header</name>
+	                <value>Categories</value>
+	                <read-only>false</read-only>
+	              </preference>
                 <preference>
                   <name>itemsPerPage</name>
                   <value>5</value>
@@ -1278,7 +1288,7 @@
               <preferences>
                 <preference>
                   <name>folderPath</name>
-                  <value>repository:collaboration:/sites/@owner@/web contents/site artifacts/blogBlog</value>
+                  <value>repository:collaboration:/sites/@owner@/categories/@owner@</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
@@ -1293,14 +1303,19 @@
                 </preference>
                 <preference>
                   <name>formViewTemplatePath</name>
-                  <value>/exo:ecm/views/templates/content-list-viewer/list/DynamicoBlogCategories.gtmpl</value>
+                  <value>/exo:ecm/views/templates/content-list-viewer/navigation/DynamicoBlogArchives.gtmpl</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
                   <name>basePath</name>
-                  <value>detail</value>
+                  <value>blog</value>
                   <read-only>false</read-only>
                 </preference>
+	              <preference>
+	                <name>header</name>
+	                <value>Archives</value>
+	                <read-only>false</read-only>
+	              </preference>
                 <preference>
                   <name>itemsPerPage</name>
                   <value>5</value>
