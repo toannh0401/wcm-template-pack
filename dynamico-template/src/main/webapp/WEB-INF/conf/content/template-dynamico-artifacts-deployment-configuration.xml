@@ -55,6 +55,76 @@
             </field>
           </object>
         </object-param>
+        
+        <object-param>
+          <name>Dynamico flexslider data</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/css</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/dynamico/flexslider.css.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+        <object-param>
+          <name>Dynamico jquery</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/js</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/dynamico/jquery.js.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+        <object-param>
+          <name>Dynamico jquery flexslider</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/js</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/dynamico/jquery.flexslider.js.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        
         <object-param>
           <name>Dynamico Logo</name>
           <description>Deployment Descriptor</description>
@@ -1179,7 +1249,7 @@
     </component-plugin>
 
     
-    <!--component-plugin>
+    <component-plugin>
       <name>Dynamico-Template-publication</name>
       <set-method>addPlugin</set-method>
       <type>org.exoplatform.services.wcm.extensions.deployment.CreatePortalPublicationPlugin</type>
@@ -1219,7 +1289,7 @@
           </object>
         </object-param>
       </init-params>
-    </component-plugin-->
+    </component-plugin>
 
   </external-component-plugins>
 
