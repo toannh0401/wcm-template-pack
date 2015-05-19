@@ -1,10 +1,10 @@
 <%
-	 /**
-	 	* Created by The eXo Platform SAS
-	 	* Author : eXoPlatform
-	 	*          benjamin.paillereau@exoplatform.com
-	 	* Aug 3, 2010  
-	 	*/
+   /**
+    * Created by The eXo Platform SAS
+    * Author : eXoPlatform
+    *          benjamin.paillereau@exoplatform.com
+    * Aug 3, 2010  
+    */
 
 %>
 <%
@@ -16,7 +16,7 @@ public void renderCategories(def categories) {
       if (category.isSelected()) cssStyle = "active";
       %>
       <li class="$cssStyle">
-      	<a  href="$categoryURL" rel="tooltip" data-placement="bottom" title="$categoryTitle">$categoryTitle</a>  
+        <a  href="$categoryURL" rel="tooltip" data-placement="bottom" title="$categoryTitle">$categoryTitle</a>  
       </li>
       <%
       first=false;
@@ -44,11 +44,11 @@ public void renderCategories(def categories) {
 </style>
 
 <div id="$uicomponent.id" class="uiTabNormal uiTabGrayInPage simpleHorizontal">
-  	<ul class="nav nav-tabs">
+    <ul class="nav nav-tabs">
             <%
             def categories = uicomponent.getCategories();
             renderCategories(categories);
             %>
-	</ul>
+  </ul>
 </div>
 
