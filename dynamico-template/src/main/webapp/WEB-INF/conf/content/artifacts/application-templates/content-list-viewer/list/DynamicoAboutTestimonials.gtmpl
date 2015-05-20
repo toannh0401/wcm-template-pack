@@ -154,7 +154,7 @@
 	 			if (isShowReadmore) {
 	 				%>
 
-	 				<div class="readLink"><a href="$itemWebdavLink" rel="tooltip" data-placement="bottom" title="<%= _ctx.appRes("UICLVPresentation.label.readmore") %>"><%= _ctx.appRes("UICLVPresentation.label.readmore") %></a></div><%
+	 				<div class="readLink"><a href="$itemLink" rel="tooltip" data-placement="bottom" title="<%= _ctx.appRes("UICLVPresentation.label.readmore") %>"><%= _ctx.appRes("UICLVPresentation.label.readmore") %></a></div><%
 	 			}
 	 			%>
 	 			</div><!--media-body-->
