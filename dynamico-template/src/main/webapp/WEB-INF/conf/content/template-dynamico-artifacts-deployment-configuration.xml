@@ -28,7 +28,7 @@
   <external-component-plugins>
     <target-component>org.exoplatform.services.wcm.portal.artifacts.CreatePortalArtifactsService</target-component>
     <component-plugin>
-      <name>Dynamico-Template-webcontent</name>
+      <name>template-Dynamico-webcontent</name>
       <set-method>addPlugin</set-method>
       <type>org.exoplatform.services.wcm.webcontent.InitialWebContentPlugin</type>
       <description>This plugin deploy some initial webcontent as site artifact to site artifact folder of portal when a portal is created</description>
@@ -171,6 +171,28 @@
           </object>
         </object-param>
 
+        <object-param>
+          <name>Dynamico list arrow</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/dynamico/list_arrow.png.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
 
         <object-param>
           <name>Dynamico Logo</name>
@@ -700,7 +722,7 @@
     </component-plugin>
 
     <component-plugin>
-      <name>Dynamico-Template-taxonomy-tree</name>
+      <name>template-Dynamico-taxonomy-tree</name>
       <set-method>addPlugin</set-method>
       <type>org.exoplatform.services.wcm.category.CreateTaxonomyPlugin</type>
       <description>This plugin deploy taxonomy tree to categories folder of site when a site is created</description>
@@ -1179,7 +1201,7 @@
     </component-plugin>
 
     <component-plugin>
-      <name>Dynamico-Template-link</name>
+      <name>template-Dynamico-link</name>
       <set-method>addPlugin</set-method>
       <type>org.exoplatform.services.wcm.link.CreatePortalLinkPlugin</type>
       <description>This plugin deploy some initial webcontent as site artifact to site artifact folder of portal when a portal is created</description>
@@ -1297,7 +1319,7 @@
 
     
     <component-plugin>
-      <name>Dynamico-Template-publication</name>
+      <name>template-Dynamico-publication</name>
       <set-method>addPlugin</set-method>
       <type>org.exoplatform.services.wcm.extensions.deployment.CreatePortalPublicationPlugin</type>
       <description>Publication Deployment Plugin</description>
