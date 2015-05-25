@@ -29,28 +29,27 @@
 	 	%>
 
 	 	<div class="documentsCLVTemplate" id="$uicomponent.id">
-
-	 	<div class="box-module homeNews">
-	 	<h2 class="module-heading">News</h2>
-	 	<div class="module-content">
 	 	<%
 	 	def header = uicomponent.getHeader();
 	 	def rssLink = uicomponent.getRssLink();
 	 	def isShowRssLink = uicomponent.isShowRssLink();
 	 	def isShowHeader = uicomponent.isShowField(UICLVPortlet.PREFERENCE_SHOW_HEADER) && header != null && header.trim().length() != 0;
 	 	%>
+
+	 	<div class="box-module homeNews">
 	 	<%
 	 	if (isShowHeader || isShowRssLink) {
 	 		%>
-	 		<h5 class="title">
+	 		<h3 class="module-heading">
 	 		<%if (isShowRssLink) {
 	 			%><a class="rssIcon pull-right" onclick="javascript:window.open('$rssLink');" style="cursor:pointer" rel="tooltip" data-placement="bottom" title="<%= _ctx.appRes("UICLVPresentation.label.rssFeed") %>"><i class="uiIconRss uiIconLightGray">&nbsp;</i></a><%
 	 		}
 	 		if(isShowHeader) {%> <span>$header</span><%}%>
-	 			</h5>
+	 			</h3>
 	 		<%
 	 	}
 	 	%>
+	 	<div class="module-content">
 	 	<%
 	 	if (uicomponent.getUIPageIterator().getAvailable() == 0) {
 	 		%>
