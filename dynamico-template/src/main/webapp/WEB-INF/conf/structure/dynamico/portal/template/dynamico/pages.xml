@@ -93,9 +93,9 @@
           <show-application-mode>false</show-application-mode>
         </portlet-application>
       </container>
-      <container id="HomeMiddleTop" template="system:/groovy/portal/webui/container/UITableColumnContainer.gtmpl">
+      <container id="HomeMiddleTop" template="system:/groovy/portal/webui/container/UIResponsiveTableThreeColumnContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
-        <container id="HomeMiddleTopLeft" template="system:/groovy/portal/webui/container/UIColumnContainer.gtmpl">
+        <container id="HomeMiddleTopLeft" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
           <access-permissions>Everyone</access-permissions>
           <portlet-application>
             <portlet>
@@ -166,7 +166,7 @@
             <show-application-mode>false</show-application-mode>
           </portlet-application>
         </container>
-        <container id="HomeMiddleTopMid" template="system:/groovy/portal/webui/container/UIColumnContainer.gtmpl">
+        <container id="HomeMiddleTopMid" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
           <access-permissions>Everyone</access-permissions>
           <portlet-application>
             <portlet>
@@ -237,7 +237,7 @@
             <show-application-mode>false</show-application-mode>
           </portlet-application>
         </container>
-        <container id="HomeMiddleTopRight" template="system:/groovy/portal/webui/container/UIColumnContainer.gtmpl">
+        <container id="HomeMiddleTopRight" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
           <access-permissions>Everyone</access-permissions>
           <portlet-application>
             <portlet>
@@ -309,9 +309,9 @@
           </portlet-application>
         </container>
       </container>
-      <container id="HomeMiddleBottom" template="system:/groovy/portal/webui/container/UITableColumnContainer.gtmpl">
+      <container id="HomeMiddleBottom" template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
-        <container id="HomeMiddleBottomLeft" template="system:/groovy/portal/webui/container/UIColumnContainer.gtmpl">
+        <container id="HomeMiddleBottomLeft" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
           <access-permissions>Everyone</access-permissions>
           <portlet-application>
             <portlet>
@@ -382,7 +382,7 @@
             <show-application-mode>false</show-application-mode>
           </portlet-application>
         </container>
-        <container id="HomeMiddleBottomRight" template="system:/groovy/portal/webui/container/UIColumnContainer.gtmpl">
+        <container id="HomeMiddleBottomRight" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
           <access-permissions>Everyone</access-permissions>
           <portlet-application>
             <portlet>
@@ -455,9 +455,9 @@
         </container>
       </container>
       
-      <container id="HomeBottom" template="system:/groovy/portal/webui/container/UITableColumnContainer.gtmpl">
+      <container id="HomeBottom" template="system:/groovy/portal/webui/container/UIResponsiveTableFourColumnContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
-        <container id="HomeBottomLeft" template="system:/groovy/portal/webui/container/UIColumnContainer.gtmpl">
+        <container id="HomeBottomLeft" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
           <access-permissions>Everyone</access-permissions>
           <portlet-application>
             <portlet>
@@ -528,7 +528,7 @@
             <show-application-mode>false</show-application-mode>
           </portlet-application>
         </container>
-        <container id="HomeBottomMid1" template="system:/groovy/portal/webui/container/UIColumnContainer.gtmpl">
+        <container id="HomeBottomMid1" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
           <access-permissions>Everyone</access-permissions>
           <portlet-application>
             <portlet>
@@ -599,7 +599,7 @@
             <show-application-mode>false</show-application-mode>
           </portlet-application>
         </container>
-        <container id="HomeBottomMid2" template="system:/groovy/portal/webui/container/UIColumnContainer.gtmpl">
+        <container id="HomeBottomMid2" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
           <access-permissions>Everyone</access-permissions>
           <portlet-application>
             <portlet>
@@ -670,7 +670,7 @@
             <show-application-mode>false</show-application-mode>
           </portlet-application>
         </container>
-        <container id="HomeBottomRight" template="system:/groovy/portal/webui/container/UIColumnContainer.gtmpl">
+        <container id="HomeBottomRight" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
           <access-permissions>Everyone</access-permissions>
           <portlet-application>
             <portlet>
@@ -750,9 +750,9 @@
     <title>About</title>
     <access-permissions>Everyone</access-permissions>
     <edit-permission>editor:/platform/web-contributors</edit-permission>
-    <container id="DynamicoAbout" template="system:/groovy/portal/webui/container/UITableColumnContainer.gtmpl">
+    <container id="DynamicoAbout" template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
-      <container id="AboutLeft" template="system:/groovy/portal/webui/container/UIColumnContainer.gtmpl">
+      <container id="AboutLeft" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
         <container id="AboutLeftTop" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
           <access-permissions>Everyone</access-permissions>
@@ -897,7 +897,7 @@
           </portlet-application>
         </container>
       </container>
-      <container id="AboutRight" template="system:/groovy/portal/webui/container/UIColumnContainer.gtmpl">
+      <container id="AboutRight" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
         <container id="AboutRightTop" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
           <access-permissions>Everyone</access-permissions>
@@ -1050,7 +1050,7 @@
     <title>Services</title>
     <access-permissions>Everyone</access-permissions>
     <edit-permission>*:/platform/administrators</edit-permission>
-    <container id="DynamicoService" template="system:/groovy/portal/webui/container/UITableColumnContainer.gtmpl">
+    <container id="DynamicoService" template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <portlet-application>
         <portlet>
@@ -1123,9 +1123,9 @@
     <title>Blog</title>
     <access-permissions>Everyone</access-permissions>
     <edit-permission>editor:/platform/web-contributors</edit-permission>
-    <container id="DynamicoBlog" template="system:/groovy/portal/webui/container/UITableColumnContainer.gtmpl">
+    <container id="DynamicoBlog" template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
-      <container id="BlogLeft" template="system:/groovy/portal/webui/container/UIColumnContainer.gtmpl">
+      <container id="BlogLeft" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
          <portlet-application>
            <portlet>
@@ -1201,7 +1201,7 @@
            <show-application-mode>false</show-application-mode>
          </portlet-application>
       </container>
-      <container id="BlogRight" template="system:/groovy/portal/webui/container/UIColumnContainer.gtmpl">
+      <container id="BlogRight" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
         <container id="BlogRightTop" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
           <access-permissions>Everyone</access-permissions>
@@ -1437,9 +1437,9 @@
           <show-application-mode>false</show-application-mode>
         </portlet-application>
       </container>
-      <container id="MailBottom" template="system:/groovy/portal/webui/container/UITableColumnContainer.gtmpl">
+      <container id="MailBottom" template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
-        <container id="MailBottomLeft" template="system:/groovy/portal/webui/container/UIColumnContainer.gtmpl">
+        <container id="MailBottomLeft" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
           <access-permissions>Everyone</access-permissions>
           <portlet-application>
             <portlet>
@@ -1510,7 +1510,7 @@
             <show-application-mode>false</show-application-mode>
           </portlet-application>
         </container>
-        <container id="MailBottomRight" template="system:/groovy/portal/webui/container/UIColumnContainer.gtmpl">
+        <container id="MailBottomRight" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
           <access-permissions>Everyone</access-permissions>
           <portlet-application>
             <portlet>
