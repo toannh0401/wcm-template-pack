@@ -40,6 +40,13 @@
       <version>${project.version}</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>org.exoplatform.addons.wcm-template</groupId>
+      <artifactId>template-pack-config</artifactId>
+      <type>jar</type>      
+      <version>${project.version}</version>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
   <profiles>
     <profile>
