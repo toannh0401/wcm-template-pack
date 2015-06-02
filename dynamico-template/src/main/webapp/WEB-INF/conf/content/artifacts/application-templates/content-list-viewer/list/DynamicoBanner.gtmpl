@@ -1,0 +1,63 @@
+<%
+import org.exoplatform.services.wcm.utils.WCMCoreUtils;
+def currentPageData = uicomponent.getCurrentPageData();
+%>
+<div id="slider">
+	<div id="flexslider">
+		<ul class="slides clearfix">
+			<%
+			for (viewNode in currentPageData) {
+				if (viewNode != null && viewNode.hasProperty("jcr:content/jcr:mimeType") && viewNode.getProperty("jcr:content/jcr:mimeType").getString().startsWith("image/")) {
+					def imgUrl = WCMCoreUtils.generateImageURI(viewNode, null);
+					def imgTitle = viewNode.hasProperty("exo:title")? viewNode.getProperty("exo:title").getString() : "";
+					def imgSubtitle = viewNode.hasProperty("exo:subTitle")? viewNode.getProperty("exo:subTitle").getString() : "";
+					%>
+
+					<li><img alt="" src="$imgUrl" />
+						<div class="flex-caption">
+							<div>
+							<p class="title1">$imgTitle</p>
+
+							<p class="title2">$imgSubtitle</p>
+							</div>
+						</div>		
+					</li>
+					<%
+				}
+			}
+			%>		
+		</ul>
+	</div>
+</div>
+
+<script type="text/javascript">
+if (jQuery) {
+	jQuery(window).load(function() {
+	    jQuery('#slides-pagination').flexslider({
+		animation: "fade",
+		controlNav: false,
+		animationLoop: false,
+		slideshow: false,
+		    prevText: "",
+		    nextText: "",
+		itemWidth: 253,
+		itemMargin: 1,
+		asNavFor: '#flexslider'
+	      });										
+		jQuery('#flexslider').flexslider({
+		animation: "fade",			
+		slideshow: true,			
+		slideshowSpeed: 7000,
+		animationDuration: 600,				
+		prevText: "",
+		nextText: "",
+		controlNav: false,
+		sync: "#slides-pagination"					
+		})
+	    jQuery('#tab_preview a').click(function (e) {
+			e.preventDefault();
+			jQuery(this).tab('show');
+		}) 	 				
+	});
+}
+</script>

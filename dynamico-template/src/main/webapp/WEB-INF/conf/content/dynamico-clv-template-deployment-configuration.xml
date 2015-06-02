@@ -43,6 +43,23 @@
           <name>portlet.template.path</name>
           <value>war:/conf/content/artifacts/application-templates/content-list-viewer</value>
         </value-param>
+        
+        <object-param>
+          <name>Dynamico Banner</name>
+          <description>Dynamico Banner</description>
+          <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
+            <field name="title">
+               <string>Dynamico Banner</string>
+            </field>
+            <field name="templateName">
+              <string>DynamicoBanner.gtmpl</string>
+            </field>
+            <field name="category">
+              <string>list</string>
+            </field>
+          </object>
+        </object-param>
+        
         <object-param>
           <name>Dynamico Home News</name>
           <description>Dynamico Home News</description>
