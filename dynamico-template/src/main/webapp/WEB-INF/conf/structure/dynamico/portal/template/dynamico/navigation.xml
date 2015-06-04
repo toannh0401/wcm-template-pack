@@ -129,6 +129,18 @@
       <visibility>HIDDEN</visibility>
       <page-reference>portal::@owner@::detail</page-reference>
     </node>
+    
+    <node>
+      <uri>about-us</uri>
+      <name>about-us</name>
+      <label xml:lang="en">About us</label>
+      <label xml:lang="fr">A propos de nous</label>
+      <label xml:lang="vi">Về chúng tôi</label>
+      <label xml:lang="pt-BR">About us</label>
+      <visibility>HIDDEN</visibility>
+      <page-reference>portal::@owner@::aboutUs</page-reference>
+    </node>
+    
     <node>
       <uri>printviewer</uri>
       <name>printviewer</name>

@@ -24,5 +24,17 @@
       <supertype>exo:webContent</supertype>
     </supertypes>
   </nodeType> 
-	
+  
+	<nodeType name="exo:testimonial" isMixin="false" hasOrderableChildNodes="false" primaryItemName="" >
+		<supertypes>
+  		<supertype>exo:webContent</supertype>
+		</supertypes>
+	</nodeType>
+
+  <nodeType name="exo:teamMember" isMixin="false" hasOrderableChildNodes="false" primaryItemName="" >
+    <supertypes>
+      <supertype>exo:webContent</supertype>
+    </supertypes>
+  </nodeType> 
+
 </nodeTypes>
