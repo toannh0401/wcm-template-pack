@@ -1246,7 +1246,7 @@
                </preference>
                <preference>
                  <name>showTitle</name>
-                 <value>false</value>
+                 <value>true</value>
                  <read-only>false</read-only>
                </preference>
                <preference>
@@ -1261,7 +1261,12 @@
              </preference>
                <preference>
                  <name>showHeader</name>
-                 <value>false</value>
+                 <value>true</value>
+                 <read-only>false</read-only>
+               </preference>
+               <preference>
+                 <name>header</name>
+                 <value>Blog</value>
                  <read-only>false</read-only>
                </preference>
                <preference>
@@ -1269,6 +1274,11 @@
                  <value>false</value>
                  <read-only>false</read-only>
                </preference>
+            <preference>
+              <name>showRssLink</name>
+              <value>false</value>
+              <read-only>false</read-only>
+            </preference>               
               <preference>
                 <name>contextualFolder</name>
                 <value>contextualEnable</value>
@@ -1442,8 +1452,8 @@
   </page>
   
  <page>
-    <name>mail</name>
-    <title>Mail</title>
+    <name>contact</name>
+    <title>Contact</title>
     <access-permissions>Everyone</access-permissions>
     <edit-permission>editor:/platform/web-contributors</edit-permission>
     <container id="DynamicoMail" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">

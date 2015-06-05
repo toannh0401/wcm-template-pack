@@ -41,6 +41,26 @@
     <supertypes>
       <supertype>exo:webContent</supertype>
     </supertypes>
+  </nodeType>
+  
+  <nodeType name="exo:dnblog" isMixin="false" hasOrderableChildNodes="false" primaryItemName="" >
+    <supertypes>
+      <supertype>exo:webContent</supertype>
+    </supertypes>
   </nodeType> 
 
+  <nodeType name="exo:googleMap" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
+    <supertypes>
+      <supertype>nt:base</supertype>
+      <!--supertype>mix:referenceable</supertype>
+      <supertype>exo:rss-enable</supertype-->
+    </supertypes>
+    <propertyDefinitions>
+      <propertyDefinition name="exo:location" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY"
+        protected="false" multiple="false">
+        <valueConstraints/>
+      </propertyDefinition>
+    </propertyDefinitions>
+  </nodeType>
+  
 </nodeTypes>

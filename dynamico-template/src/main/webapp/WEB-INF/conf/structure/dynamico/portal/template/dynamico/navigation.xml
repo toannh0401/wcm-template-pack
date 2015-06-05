@@ -67,14 +67,14 @@
       <page-reference>portal::@owner@::blog</page-reference>
     </node>
     <node>
-      <uri>mail</uri>
-      <name>mail</name>
-      <label xml:lang="en">Mail</label>
-      <label xml:lang="fr">Mail</label>
-      <label xml:lang="vi">Mail</label>
-      <label xml:lang="pt-BR">Mail</label>
+      <uri>contact</uri>
+      <name>contact</name>
+      <label xml:lang="en">Contact</label>
+      <label xml:lang="fr">Contact</label>
+      <label xml:lang="vi">Contact</label>
+      <label xml:lang="pt-BR">Contact</label>
       <visibility>DISPLAYED</visibility>
-      <page-reference>portal::@owner@::mail</page-reference>
+      <page-reference>portal::@owner@::contact</page-reference>
     </node>
     <node>
       <uri>search</uri>

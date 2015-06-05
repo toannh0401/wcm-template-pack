@@ -14,7 +14,8 @@
 	 	import org.exoplatform.services.wcm.core.NodeLocation;
 	 	import org.exoplatform.services.jcr.core.ManageableRepository;
 	 	import org.exoplatform.webui.application.WebuiRequestContext;
-
+	 	import org.exoplatform.services.wcm.utils.WCMCoreUtils;
+	 	import org.exoplatform.services.cms.comments.CommentsService;
 
 	 	def propertyName = "exo:title";
 	 	def repo = "";
@@ -26,6 +27,7 @@
 	 	def language = locale.getLanguage();
 	 	def draftMsg = _ctx.appRes("PublicationStates.draft");
 	 	def publishedMsg = _ctx.appRes("PublicationStates.published");
+	 	def commentService = WCMCoreUtils.getService(CommentsService.class);
 	 	%>
 
 	 	<div class="documentsCLVTemplate" id="$uicomponent.id">
@@ -72,8 +74,12 @@
 
 	 			def itemLink = uicomponent.getURL(viewNode);
 	 			def itemWebdavLink = uicomponent.getWebdavURL(viewNode);
-	 			uicomponent.setDateTimeFormat("dd/MM/yyyy");
+	 			uicomponent.setDateTimeFormat("dd/MMMMM/yyyy");
 	 			def itemDateCreated = uicomponent.getCreatedDate(viewNode);
+	 			int slashIndex1 = itemDateCreated.indexOf('/');
+	 			int slashIndex2 = itemDateCreated.lastIndexOf('/');
+	 			def itemCreatedDay = itemDateCreated.substring(0, slashIndex1);
+	 			def itemCreatedMonth = itemDateCreated.substring(slashIndex1 + 1, slashIndex2);
 	 			def itemOwner = uicomponent.getAuthor(viewNode);
 
 	 			def imgSrc = uicomponent.getIllustrativeImage(viewNode);
@@ -93,11 +99,12 @@
 	 			repo = ((ManageableRepository)viewNode.getSession().getRepository()).getConfiguration().getName();
 	 			workspace = viewNode.getSession().getWorkspace().getName();
 	 			uuid = viewNode.getUUID();
+	 			def commentCount = commentService.getComments(viewNode, null).size();
 
 	 			%>
 	 			<%=uicomponent.addQuickEditDiv("Column1 media " + ((i%2==1)?"odd":"even"),, viewNode)%>
 	 			<div class="clearfix">
-	 				<div class="badge"><p><time datetime="2013-01-01">25</time></p><p class="numb">nov</p></div>
+	 				<div class="badge"><p><time datetime="2013-01-01">$itemCreatedDay</time></p><p class="numb">$itemCreatedMonth</p></div>
 	 				<div class="extra-wrap">
 	 					<%
 
@@ -132,7 +139,7 @@
 
 				 			%>
 			 			<div class="clearfix">
- 							<p>Posted by&nbsp;</p><a class="pull-left" href="#">Admin</a><a class="pull-right" href="#">320 Comment(s)</a>
+ 							<p>Posted by&nbsp;</p><a class="pull-left" href="#">$itemOwner</a><a class="pull-right" href="#">$commentCount Comment(s)</a>
 			 			</div>
 	 				</div>
 	 			</div>
@@ -167,7 +174,7 @@
 	 			if (isShowReadmore) {
 	 				%>
 
-	 				<div class="readLink"><a class="btn btn-primary" href="$itemWebdavLink" rel="tooltip" data-placement="bottom" title="<%= _ctx.appRes("UICLVPresentation.label.readmore") %>"><%= _ctx.appRes("UICLVPresentation.label.readmore") %></a></div><%
+	 				<div class="readLink"><a class="btn btn-primary" href="$itemLink" rel="tooltip" data-placement="bottom" title="<%= _ctx.appRes("UICLVPresentation.label.readmore") %>"><%= _ctx.appRes("UICLVPresentation.label.readmore") %></a></div><%
 	 			}
 	 			%>
 	 			</div><!--media-body-->

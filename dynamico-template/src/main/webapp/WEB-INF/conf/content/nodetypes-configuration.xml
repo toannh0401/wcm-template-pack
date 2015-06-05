@@ -300,6 +300,93 @@
                   </object>
                 </value>
 
+
+                <!-- blog -->
+                <value>
+                  <object type="org.exoplatform.services.cms.templates.impl.TemplateConfig$NodeType">
+                    <field name="nodetypeName">
+                      <string>exo:dnblog</string>
+                    </field>
+                    <field name="documentTemplate">
+                      <boolean>true</boolean>
+                    </field>
+                    <field name="label">
+                      <string>Blog</string>
+                    </field>
+                    <field name="referencedView">
+                      <collection type="java.util.ArrayList">
+                        <value>
+                          <object type="org.exoplatform.services.cms.templates.impl.TemplateConfig$Template">
+                            <field name="templateFile">
+                              <string>/blog/view1.gtmpl</string>
+                            </field>
+                            <field name="roles">
+                              <string>*</string>
+                            </field>
+                          </object>
+                        </value>
+                      </collection>
+                    </field>
+                    <field name="referencedDialog">
+                      <collection type="java.util.ArrayList">
+                        <value>
+                          <object type="org.exoplatform.services.cms.templates.impl.TemplateConfig$Template">
+                            <field name="templateFile">
+                              <string>/blog/dialog1.gtmpl</string>
+                            </field>
+                            <field name="roles">
+                              <string>*</string>
+                            </field>
+                          </object>
+                        </value>
+                      </collection>
+                    </field>
+                  </object>
+                </value>
+
+                <!-- googleMap -->
+                <value>
+                  <object type="org.exoplatform.services.cms.templates.impl.TemplateConfig$NodeType">
+                    <field name="nodetypeName">
+                      <string>exo:googleMap</string>
+                    </field>
+                    <field name="documentTemplate">
+                      <boolean>true</boolean>
+                    </field>
+                    <field name="label">
+                      <string>Map</string>
+                    </field>
+                    <field name="referencedView">
+                      <collection type="java.util.ArrayList">
+                        <value>
+                          <object type="org.exoplatform.services.cms.templates.impl.TemplateConfig$Template">
+                            <field name="templateFile">
+                              <string>/googleMap/view1.gtmpl</string>
+                            </field>
+                            <field name="roles">
+                              <string>*</string>
+                            </field>
+                          </object>
+                        </value>
+                      </collection>
+                    </field>
+                    <field name="referencedDialog">
+                      <collection type="java.util.ArrayList">
+                        <value>
+                          <object type="org.exoplatform.services.cms.templates.impl.TemplateConfig$Template">
+                            <field name="templateFile">
+                              <string>/googleMap/dialog1.gtmpl</string>
+                            </field>
+                            <field name="roles">
+                              <string>*</string>
+                            </field>
+                          </object>
+                        </value>
+                      </collection>
+                    </field>
+                  </object>
+                </value>
+
               </collection>
             </field>
           </object>
