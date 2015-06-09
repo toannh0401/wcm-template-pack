@@ -28,4 +28,5 @@
   <import>war:/conf/content/templates-deployment-configuration.xml</import>
   <import>war:/conf/content/dynamico-clv-template-deployment-configuration.xml</import>
   <import>war:/conf/content/nodetypes-configuration.xml</import>
+  <import>war:/conf/content/scripts-configuration.xml</import>
 </configuration>

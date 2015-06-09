@@ -15,7 +15,7 @@
   
 	def currentNode = uicomponent.getNode() ;
 	def location = currentNode.hasProperty("exo:location") ? 
-                 currentNode.getProperty("exo:location") : 
+                 currentNode.getProperty("exo:location").getString() : 
                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916298517096!2d2.2944809999999936!3d48.85837000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTh%C3%A1p+Eiffel!5e0!3m2!1svi!2s!4v1433499953049";
 %>
 <div class="container">

@@ -802,7 +802,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/dynamico/mailContactForm.xml</string>
+              <string>war:/conf/content/artifacts/site-resources/dynamico/mailContactRequests.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
